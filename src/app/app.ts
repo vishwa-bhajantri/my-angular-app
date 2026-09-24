@@ -1,6 +1,8 @@
 import { Component} from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
+  imports: [FormsModule],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
@@ -52,5 +54,13 @@ export class App {
           console.log(inpE1.value);
           this.EmpName = inpE1.value;
         }
+
+
+        //ng model
+        customerLocation = "India";
+
+        // customerLocationChange(Name: any){
+        //   this.customerLocation = Name;
+        // }
 
 }
