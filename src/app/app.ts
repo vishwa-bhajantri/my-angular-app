@@ -22,6 +22,29 @@ export class App {
 isStudentPassed = "Pass";
 
 
+//ngFor
+Employees = ["peter", "John", "Steve"];
+
+
+EmployeeDetails= [
+  {
+    Name: 'john',
+    Salary: '12k',
+  },
+  {
+    Name: 'steve',
+    Salary: '15k',
+  },
+  {
+    Name: 'Robert',
+    Salary: '20k',
+  },
+];
+
+//ngSwith Case
+
+CustomerId = 0;
+
 }
 
 

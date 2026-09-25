@@ -17,3 +17,48 @@
 <h1 *ngIf="isStudentPassed == 'Pass'">
     I am Pass
 </h1>
+<hr>
+
+
+<!-- ngFor -->
+
+<!-- <ul>
+<li *ngFor="let emp of Employees">
+    {{emp}}
+</li>
+</ul> -->
+
+<ul>
+
+<li *ngFor="let e1 of EmployeeDetails">
+    <strong>{{e1.Name}}</strong> <br>
+    <strong>{{e1.Salary}}</strong>
+
+</li>
+
+</ul>
+
+
+<!-- ngSwitch Case -->
+
+<h1>Customers</h1>
+
+<div style="margin: 20px" [ngSwitch]= "CustomerId">
+
+    <div *ngSwitchCase = "10">
+        <p>JOHN</p>
+    </div>
+
+    <div *ngSwitchCase = "20">
+        <p>PETER</p>
+    </div>
+
+    <div *ngSwitchCase = "30">
+        <p>ROBERT</p>
+    </div>
+
+    <div *ngSwitchDefault>
+        <p>No Customer</p>
+    </div>
+
+</div>
