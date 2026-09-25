@@ -1,56 +1,27 @@
+import { CommonModule } from '@angular/common';
 import { Component} from '@angular/core';
 
 @Component({
+  imports: [CommonModule],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
 
 export class App {
+  divBgColor = 'green';
+  divColor = 'yellow';
 
-  // constructor(){
-  //   setTimeout(() => {
-  //     this.customInputType = "checkbox";
-  //   }, 50);
-  // }
+  issuccess = false;
+  divClass = 'success';
+  divFailure = 'failure'
 
-        //String Interpolation 
-        ProjectName: string = "Angular";
-        title: string = "Basic App";
 
-        getCustomerName(): string{
-          return "Steve"
-        }
+// ngif
 
-        //property Data Binding 
+isStudentPassed = "Pass";
 
-        customerRole: string = "Admin";
-
-        Message:string = "Login Hours 10 am to 11 am";
-
-        // customInputType = "checkbox"
-
-        customInputType:string = "radio"
-
-        //event binding
-
-        btnClick(){
-          console.log("Btn Clicked");
-          console.log(this.EmpName);
-        }
-
-        EmpName = ""
-
-        placeHolderMessage = "please enter your name";
-        captureData(eventDetails: KeyboardEvent){
-          //console.log("you enter some charecter");
-          
-          var inpE1 = eventDetails.target as HTMLInputElement;
-          // console.log(inpE1);
-          // console.dir(inpE1);
-
-          console.log(inpE1.value);
-          this.EmpName = inpE1.value;
-        }
 
 }
+
+

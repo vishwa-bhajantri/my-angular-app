@@ -1,23 +1,19 @@
-<!-- <button class="btn btn-primary">click</button> -->
+<h1>ngStyle Directive</h1>
 
-<!-- String Interpolation -->
-<h1>{{ProjectName}}-{{title}}</h1>
+<!-- <div style="background-color:cornflowerblue;">cornflowerblue Color</div> -->
 
-<h1>{{getCustomerName()}}</h1>
+<div [ngStyle] = "{'background-color': divBgColor, 
+            'color': divColor}">Green Color</div>
 
-<!-- property Data Binding  -->
-<input type="text" value="Admin" />
+<hr>
 
-<input type="text" [value]="customerRole" /> <!-- this is property Data Binding -->
+<!-- <div class="success">Employee got hike</div> -->
 
-checkbox : <input [type]="customInputType">
 
-<textarea [value]="Message"></textarea>
+<div [ngClass]="issuccess == true ? divClass : divFailure">Employee got hike</div>
 
-<!-- Event Binding -->
- <button (click) = "btnClick()">Submit</button>
+<!-- ngif -->
 
- <input type="text" [placeholder] = "placeHolderMessage" 
- (keyup) = "captureData($event)"/>
-
- <h2>Your Name: {{EmpName}}</h2>
+<h1 *ngIf="isStudentPassed == 'Pass'">
+    I am Pass
+</h1>
