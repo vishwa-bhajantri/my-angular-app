@@ -1,2 +1,59 @@
 <p>comp-b works!</p>
 <h1>COMP-B</h1>
+
+
+<div [style.margin] = "'100px'">
+<!-- <div [style.background-color] = "'green'">Green Color</div> -->
+
+<div [style.background-color] = "ZoneStatus == true ? 'green' : 'red'">{{message}}</div>
+<div [style.color] = "'red'">yellow Color</div>
+
+<button (click)="evtClick()">Check Status</button>
+</div>
+
+<!-- //Example 2: -->
+ <div [class.success] = "isEmployeegotHike == true"
+      [class.failure] = "isEmployeegotHike != true">
+    Employee Success</div>
+
+<!-- Example 3: -->
+
+<hr>
+
+<div style="padding: 50px;">
+@if(myScore == 9.5){
+    <p>you are having A Grade</p>
+}
+@else if(myScore == 6){
+    <p>you are having below A Grade</p>
+}
+@else if(myScore == 5){
+    <p>you are good but needs to improve</p>
+}
+@else{
+    <p>you needs to be improvement</p>
+}
+</div>
+
+<hr>
+
+<!-- Example 4: -->
+
+<div style="padding: 30px;">
+
+    @for(employee of employees;track employee.id){
+        <p>
+           {{$index+1}} - {{employee.id}} - {{employee.name}}
+        </p>
+
+        Total : {{$count}}
+        First : {{$first}}
+        Last : {{$last}}
+        Even : {{$even}}
+        Odd : {{$odd}}
+    }
+    @empty {
+        <p>No Employees</p>
+    }
+
+</div>
