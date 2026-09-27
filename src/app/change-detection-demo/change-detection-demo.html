@@ -1,0 +1,41 @@
+
+
+<!-- Example for change detection-->
+<div class="container mt-5">
+    <h2 class="mb-4">
+        Angular change Detction
+    </h2>
+</div>
+
+<div class="card sm mb-4">
+    <div class="card-header bg-primary text-white">
+        component Data Change 
+    </div>
+    <div class="card-body">
+        <h5>
+            Employee : {{Employee}}
+        </h5>
+
+        <button class="btn btn-primary mt-2" (click)="changeEmployee()">
+            ChangeEmployee
+        </button>
+    </div>
+</div>
+
+
+
+<!-- Example for change detection-->
+<div class="card sm mb-4">
+    <div class="card-header bg-primary text-white">
+        Asynchronous Change
+    </div>
+    <div class="card-body">
+        <h5>
+            Current Date : {{currentDate}} - {{employeeStatus}}
+        </h5>
+
+        <button class="btn btn-primary mt-2" (click)="startTimer()">
+            Start Timer
+        </button>
+    </div>
+</div>
