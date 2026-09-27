@@ -23,6 +23,10 @@ onClick1(template:any){
 //Example
 employeeStatus = false;
 
+//Switch Example
+
+control_type = 1;
+
 }
 
 

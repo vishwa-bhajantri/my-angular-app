@@ -24,3 +24,34 @@
 <ng-template #noemployee>
     <h2>Employee is Offline</h2>
 </ng-template>
+
+<hr>
+
+
+<!-- Switch Example -->
+ 
+@switch(control_type){
+
+    @case(0){
+        <p>paragraph</p>
+    }
+    @case(1){
+        <input type="text" style="background-color: brown;">
+    }
+    @case(2){
+        <select>
+            <option>
+                Option A
+            </option>
+            <option>
+                Option B
+            </option>
+            <option>
+                Option C
+            </option>
+        </select>
+    }
+    @default{
+        <span>no control is available</span>
+    }
+}
