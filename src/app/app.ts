@@ -1,9 +1,10 @@
 import { Component} from '@angular/core';
 import { compA } from './comp_a/comp_a';
 import { compB } from './comp-b/comp-b';
+import { compC } from './comp-c/comp-c';
 
 @Component({
-  imports: [compA, compB],
+  imports: [compA, compB, compC],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

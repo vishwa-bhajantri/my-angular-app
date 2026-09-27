@@ -1,0 +1,26 @@
+<p>comp-c works!</p>
+
+
+
+<!-- reference Value exmaple -->
+ <input type="text" #employeeName/>
+ <button (click)="onClick(employeeName)">Click Here</button>
+ <hr>
+
+ <!-- now using the ng template -->
+
+
+ <ng-template #template>
+    <h1>Hello World</h1>
+</ng-template>
+<button (click)="onClick1(template)">Click here</button>
+
+<!-- Example -->
+
+<div *ngIf="employeeStatus;else noemployee">
+    <h2>Employee is online</h2>
+</div>
+
+<ng-template #noemployee>
+    <h2>Employee is Offline</h2>
+</ng-template>
